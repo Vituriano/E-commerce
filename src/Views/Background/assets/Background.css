@@ -1,0 +1,85 @@
+header {
+    display: flex;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    color: white;
+    justify-content: space-around;
+    padding: 1em 0;
+    position: fixed;
+    z-index: 5;
+}
+
+header img {
+    width: 3.5em;
+}
+
+aside img{
+    width: 2em;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+}
+
+.text {
+    margin-left: 1em;
+    flex-direction: column;
+}
+
+aside {
+    top: 5.7em;
+    border-right: 2px solid rgb(202, 202, 202);
+    width: 20%;
+    min-width: 200px;
+    height: calc(100% - 5.7em);
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    justify-content: space-between;
+}
+
+aside input {
+    outline: none;
+    font-size: 1.2em;
+    padding-left: 4em;
+    height: 4em;
+    width: calc(100% - 4em);
+    border: none;
+    border-bottom: 2px solid rgb(202, 202, 202);
+}
+
+aside button {
+    outline: none;
+    border: none;
+    background: none;
+    padding: 1.3em 1em 1.3em 1em;
+    position: absolute;
+}
+
+#tags {
+    display: flex;
+    flex-direction: column;
+    margin: 1em;
+    align-items: center;
+}
+
+#tags p {
+    color: rgb(100, 100, 100);
+    margin: 3% 0;
+    font-size: 1.5em;
+}
+
+#products {
+    position: relative;
+    left: 30%;
+    top: 7em;
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#products>* {
+    margin: 1em 0;
+}
