@@ -1,12 +1,7 @@
 import React, { Component } from 'react';
 import './assets/Card.css'
-import macarrao from './assets/macarrao.webp'
 
 class Card extends Component {
-    constructor(props) {
-        super(props);
-    }
-
     render() {
 
         const {
@@ -33,4 +28,5 @@ class Card extends Component {
         );
     }
 }
+
 export default Card;
