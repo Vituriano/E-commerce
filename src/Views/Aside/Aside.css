@@ -1,41 +1,12 @@
-header {
-    display: flex;
-    width: 100%;
-    background: rgb(0, 0, 0);
-    color: white;
-    justify-content: space-around;
-    padding: 1em 0;
-    position: fixed;
-    z-index: 5;
-}
-
-header img {
-    width: 3.5em;
-}
-
-aside img{
-    width: 2em;
-}
-
-.title {
-    display: flex;
-    flex-direction: row;
-}
-
-.text {
-    margin-left: 1em;
-    flex-direction: column;
-}
-
 aside {
-    top: 5.7em;
     border-right: 2px solid rgb(202, 202, 202);
     width: 20%;
     min-width: 200px;
-    height: calc(100% - 5.7em);
     display: flex;
+    z-index: 4;
+    overflow: hidden;
+    background: white;
     flex-direction: column;
-    position: fixed;
     justify-content: space-between;
 }
 
@@ -50,6 +21,7 @@ aside input {
 }
 
 aside button {
+    cursor: pointer;
     outline: none;
     border: none;
     background: none;
@@ -68,18 +40,4 @@ aside button {
     color: rgb(100, 100, 100);
     margin: 3% 0;
     font-size: 1.5em;
-}
-
-#products {
-    position: relative;
-    left: 30%;
-    top: 7em;
-    width: 60%;
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-}
-
-#products>* {
-    margin: 1em 0;
 }

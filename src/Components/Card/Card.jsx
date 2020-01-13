@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import './assets/Card.css'
+import './Card.css'
 
 class Card extends Component {
     render() {
@@ -10,7 +10,7 @@ class Card extends Component {
             Tags,
         } = this.props;
 
-        const ListTags = Tags.map((Tag) => <p>{Tag}</p>);
+        const ListTags = Tags.map((Tag, i) => <p key={i}>{Tag}</p>);
 
         return (
             <>

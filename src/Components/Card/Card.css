@@ -1,11 +1,19 @@
 .card{
-    width: 30em;
-    height: 22em;
+    min-width: 30em;
+    min-height: 22em;
+    max-width: 30em;
+    max-height: 22em;
     background: black;
     color: white;
     display: flex;
     flex-direction: column;
     box-shadow: 2px 1px 10px rgba(0, 0, 0, 0.877);
+    margin: 2em 1em;
+    transition: all 0.3s;
+}
+
+.card:hover {
+    transform: scale(1.1);
 }
 
 .card h3{
