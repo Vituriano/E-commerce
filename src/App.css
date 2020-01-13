@@ -4,3 +4,12 @@
 }
 
 body { font-size: 75%; }
+
+#body{
+    top: 5.7em;
+    width: 100%;
+    height: calc(100% - 5.7em);
+    position: fixed;
+    display: flex;
+    flex-direction: row;
+}
